@@ -19,7 +19,7 @@ st.write("Deteksi objek pada gambar, video, dan webcam secara realtime.")
 # =========================
 # LOAD MODEL
 # =========================
-model = YOLO("../best.pt")
+model = YOLO("best.pt")
 
 # =========================
 # MENU MODE
