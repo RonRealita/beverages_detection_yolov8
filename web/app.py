@@ -9,12 +9,12 @@ import tempfile
 # KONFIGURASI HALAMAN
 # =========================
 st.set_page_config(
-    page_title="YOLOv8 Object Detection",
+    page_title="YOLOv8 Beverages Detection",
     layout="centered"
 )
 
-st.title("🔍 Web Deteksi Objek YOLOv8")
-st.write("Deteksi objek pada gambar, video, dan webcam secara realtime.")
+st.title("Deteksi Minuman")
+st.write("Deteksi minuman pada gambar, video, dan webcam secara realtime.")
 
 # =========================
 # LOAD MODEL
@@ -55,7 +55,7 @@ if menu == "Gambar":
             use_column_width=True
         )
 
-        st.success("Deteksi selesai ✅")
+        st.success("Deteksi gambar selesai")
 
 # =========================
 # MODE 2: DETEKSI VIDEO
@@ -84,7 +84,7 @@ elif menu == "Video":
             stframe.image(frame, channels="BGR")
 
         cap.release()
-        st.success("Deteksi video selesai ✅")
+        st.success("Deteksi video selesai")
 
 # =========================
 # MODE 3: REALTIME WEBCAM
